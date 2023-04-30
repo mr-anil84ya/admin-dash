@@ -5,9 +5,12 @@ import Home from './pages/Home';
 import Adduser from './pages/Adduser';
 import Showuser from './pages/Showuser';
 import Login from './pages/Login';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
    <>
+   <ToastContainer/>
    <BrowserRouter>
    <Routes>
     <Route path='/' exact element={<Login/>}/>

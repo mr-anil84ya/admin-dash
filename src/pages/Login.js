@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
+
 function Login () {
     const [email,setEmail]=useState("");
     const [passward,setPassward]=useState("");
@@ -13,10 +14,15 @@ function Login () {
     const handleSubmit=(e)=>{
         e.preventDefault()
         if(email === userName && passward === userPassward){
-            toast.success("Login Successful!")
+          
+            toast.success("Login Success!")
+            console.warn("success!",{
+              position: toast.POSITION.TOP_CENTER
+          });
             navigate('/homepage')
         }
         else{
+          toast.error("Invalid Email or Passward!")
             navigate('/')
         }
 
@@ -33,6 +39,7 @@ function Login () {
         <Button sx={{backgroundColor:'blue',width:'50%'}} onClick={handleSubmit}>
           Add User
         </Button>
+       
         </FormControl>
         </FormGroup>
         </Card>
