@@ -4,12 +4,14 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from './pages/Home';
 import Adduser from './pages/Adduser';
 import Showuser from './pages/Showuser';
+import Login from './pages/Login';
 function App() {
   return (
    <>
    <BrowserRouter>
    <Routes>
-    <Route path='/' exact element={<Home/>}/>
+    <Route path='/' exact element={<Login/>}/>
+    <Route path='/homepage' exact element={<Home/>}/>
     <Route path='/adduser' exact element={<Adduser/>}/>
     <Route path='/showuser' exact element={<Showuser/>}/>
    </Routes>

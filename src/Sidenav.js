@@ -88,7 +88,7 @@ export default function MiniDrawer() {
         <Divider />
         <List>
          
-            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/")}}>
+            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/homepage")}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -151,7 +151,7 @@ export default function MiniDrawer() {
               </ListItemButton>
             </ListItem>
 
-            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/showuser")}}>
+            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/")}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
